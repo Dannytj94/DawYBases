@@ -1,0 +1,41 @@
+/* External style sheet comment */
+/* Simple selector format: 
+	XHTMLtag { style-rules } 
+*/
+body {
+    
+    background-color: antiquewhite;
+    color: darkslategrey;
+  font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
+    
+}
+h1{ color: black;
+font-size: 300%;
+    
+
+}
+h2{ color: black;}
+
+h3	   { font-size: 24pt; color: darkred; }
+
+table#mitabla {
+   
+    border-collapse: collapse;
+    border: 1px solid black;
+    font-size: 12px;
+}
+ 
+table#mitabla th {
+    font-weight: bold;
+    background-color: burlywood;
+    padding:5px;
+}
+ 
+table#mitabla tbody tr:hover td {
+    background-color: beige;
+}
+ 
+table#mitabla td {
+    padding: 5px 10px;
+}
+img:hover {filter: sepia(60%);}

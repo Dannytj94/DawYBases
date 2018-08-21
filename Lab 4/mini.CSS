@@ -1,0 +1,19 @@
+h1,h2{color:#000}
+
+body{
+    background-color:#faebd7;
+    color:#2f4f4f;
+    font-family:Helvetica,Futura,Arial,Verdana,sans-serif}
+
+h1{font-size:300%}
+
+h3{font-size:24pt;color:#8b0000}
+
+table#mitabla{
+    border-collapse:collapse;border:1px solid #000;font-size:12px}
+table#mitabla th{font-weight:700;background-color:#deb887;padding:5px}
+table#mitabla tbody tr:hover 
+td{background-color:beige}
+table#mitabla 
+td{padding:5px 10px}
+img:hover{filter:sepia(60%)}

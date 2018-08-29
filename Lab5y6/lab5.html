@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+
+<!-- Lab 2: DAW -->
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Laboratorio 5 y 6 </title>
+       <link rel="stylesheet" type= "text/css" href="archivocss.CSS" />
+
+    </head>
+   
+    
+    <body>
+        <header>
+            <img
+         src="encabezado.jpg"
+        width="1340"
+        height="450"
+         >
+        </header>
+        
+        <nav class="menu">
+        <hr/>
+    <a href="#Registro">Registro</a>
+    <a href="#Comprar">Comprar</a>
+    <a href="#Carrito"> Carrito</a>
+    <a href= "#Preguntas">Preguntas</a>
+    <a href= "#Info">Información</a>
+          <hr/>
+            </nav>
+
+        <section>
+              <a id = "Registro"> </a>
+             <h3>Registro</h3> 
+        
+            
+            <p>
+            <label>Usuario: <input type="text"/></label>
+            </p>
+            <p>
+                <label>Correo: 
+                <input id="CorreoIn" type="email" placeholder="nombre@dominio.com" required/>
+                </label>
+            </p>
+            <p >
+                <label>Contraseña: 
+                <input id="Contraseña1" type="password" />
+                </label>
+            </p>
+            <p >
+                <label>Confirmar contraseña: 
+                <input id="Contraseña2" type="password" />
+                </label>
+            </p>
+            
+            <p>
+                
+                <input type="submit" value="Enviar" id="enviarboton" />
+                
+            </p>
+            
+    </section>
+        
+            <section>
+            <a id = "Comprar"> </a>
+                <h3>Comprar</h3>
+                
+                <div class="Imagenes">
+              <figure>
+                 <img             
+                    src="https://static.fnac-static.com/multimedia/Images/ES/NR/91/1c/13/1252497/1540-1.jpg"
+                    width="300"
+                    height="300"
+                    alt= "Peluche de perrito Precio: $250"
+                      
+                    > <figcaption>Peluche de perrito <br/>Precio: $250 </figcaption>
+                  <p>
+                            <label>Cantidad:  
+                                <input type="number" min = "0" max="100" step="1" value="4" id="CantidadPerro"/>
+                            </label>
+                        </p>
+                 
+                </figure>
+                </div>
+                
+                
+                <div class="Imagenes">
+                <figure>     
+                    <img
+                        src="http://cdn.shopify.com/s/files/1/1327/3893/products/P020-Peluche_Zorro_grande.jpg?v=1506873064"
+                        width="300"
+                        height="300"
+                        
+                         > 
+                <figcaption>Peluche de Zorrito <br/>Precio: $300 </figcaption>
+                    <p>
+                            <label>Cantidad: 
+                                <input type="number" min = "0" max="100" step="1" value="4" id="CantidadZorro"/>
+                            </label>
+                        </p>
+              
+                </figure> 
+                
+                </div>
+                
+                <div class="Imagenes">
+                <figure>   
+                    <img
+                        src="http://cdn.shopify.com/s/files/1/1327/3893/products/Peluche_Lobo_grande.jpg?v=1519671928"
+                        width="300"
+                        height="300"
+                        
+                         >
+                <figcaption>Peluche de Lobito <br/>Precio: $200 </figcaption>
+                    <p>
+                            <label>Cantidad: 
+                                <input type="number" min = "0" max="100" step="1" value="4" id="Cantidadlobo"/>
+                            </label>
+                        </p>
+                
+                </figure>
+                </div>    
+                
+                <br/>
+                <button type="button" id="Compralista" class="titulo">Comprar</button>
+                
+                  
+                
+        </section>
+        <Section>
+        <a id= "Carrito" ></a>
+        <h3 >Carrito</h3>
+            <div id= "aquivalatabla">
+            
+            
+            
+            
+            </div>
+        
+           
+        </Section>
+        
+        <section>
+        <h3 >Actividad</h3>
+        <p>Devuelve el cocodrilo al agua </p>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br>
+            <img id="drag1" src="croqui.png" draggable="true" ondragstart="drag(event)" width="200" height="120">
+            <button onclick="myFunction()">Activar Notificaciones</button>
+            </section>
+        <section>
+                
+                <a id = "Preguntas" > </a> 
+            <h3>Preguntas</h3>
+                
+                <p>
+                <strong>
+                 ¿Cuáles son las diferencias entre los posibles valores de la propiedad position?   
+                </strong> 
+                <br/> 
+                <table border ="1" id= "mitabla">
+                    <tr>
+                        <th>Valor</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>Static</td>
+                        <td> <i>Es el valor default. El elemento aparece en el mismo orden en el que aparece ene l docuemnto.</td>
+                    </tr>
+                    <tr>
+                        <td>Absolute</td>
+                        <td>El elemento se posiciona en el lugar relativo del alemento anterior posicionado. </td>
+                    </tr>
+                    <tr>
+                        <td>Fixed</td>
+                        <td>El elemento es posicionado relativo a la ventana del browser </td>
+                    </tr>
+                    <tr>
+                        <td>Relative</td>
+                        <td> <br/>
+                            El elemento es posicionado relativo  su posición normal.  <br/>
+                       
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Sticky</td>
+                        <td> Posición del elemento basado en la posición del scroll del usuario </td>
+                    </tr>
+                    <tr>
+                        <td>Initial</td>
+                        <td>Regresa a los valores default del elemento</td>
+                    </tr>
+                    <tr>
+                        <td>Inherit</td>
+                        <td>Hereda las propiedades de su elemento padre. </td>
+                    </tr>
+                    
+
+
+                </table>  
+                <br/>
+                <br/>
+                <strong>
+                 ¿Cuáles son los valores estandar para la propiedad visibility?
+                </strong> 
+                     <table border ="1" id= "mitabla">
+                    <tr>
+                        <th>Valor</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>Visible</td>
+                        <td> El elemento es visible </td>
+                    </tr>
+                    <tr>
+                        <td>Hidden</td>
+                        <td>El elemento está oculto </td>
+                    </tr>
+                    <tr>
+                        <td>Collapse </td>
+                        <td>Este valor remuere una columna o fila pero no afecta el layout de la tabla. </td>
+                    </tr>
+                        
+                    <tr>
+                        <td>Initial</td>
+                        <td>Regresa a los valores default del elemento</td>
+                    </tr>
+                    <tr>
+                        <td>Inherit</td>
+                        <td>Hereda las propiedades de su elemento padre. </td>
+                    </tr>
+                    
+
+
+                </table>  
+                <br/>
+                <strong>
+                ¿Qué es el zIndex y para qué sirve?  
+                </strong>
+                <br/>
+                    Es una propiedad para establecer el orden, la posición (en profundidad) de los elementos. 
+                    <br/> <br/>
+                
+            </p>
+            
+            
+            </section>
+            
+            <section>
+                <a id="Info"></a>
+                <h3>Información</h3>
+                <button id="botoncorreo" > Enviar al correo </button>
+                
+                <figure class="Imagenes">
+                 <img             
+                   id= "imagenlobo" 
+                    src="https://misanimales.com/wp-content/uploads/2017/08/perro-viene-del-lobo.jpg"
+                    width="300"
+                    height="250"
+                    alt= "Peluche de lobito"
+                   
+                      >
+                      
+                </figure> 
+              
+                
+
+                <figure class="Imagenes">
+                 <img             
+                   id= "imagenperro" 
+                    src="https://st-listas.20minutos.es/images/2011-05/287031/2991786_640px.jpg?1305917794"
+                    width="300"
+                    height="250"
+                    alt= "Peluche de perrito"
+                    >
+                 
+                </figure>
+            
+                
+                
+                <figure class="Imagenes">
+                 <img             
+                    id= "imagenzorrito" 
+                    src="http://wikifaunia.com/images/thumb/a/ac/Zorro2.JPG/335px-Zorro2.JPG"
+                    width="300"
+                    height="250"
+                    alt= "Peluche de zorrito"
+                    
+                      
+                    >
+                  
+                </figure>
+                
+                  <p id="ParrafoZorro" class="Parrafo">
+                    Los vulpinos (Vulpini) son una tribu de mamíferos carnívoros incluidos en la familia de los cánidos. Se conocen comúnmente como zorros, zorras, raposos o raposas. <br/>
+
+                    Actualmente están representados por unas 27 especies que se encuentran en casi todos los continentes, aunque la más extendida es el zorro rojo o zorro común (Vulpes vulpes), que habita en Europa y América del Norte. Otras especies importantes son el zorro gris, el zorro isleño y el zorro polar, también conocido como «zorro ártico».
+                    </p>
+                
+                     <p id="ParrafoPerro" class="Parrafo">
+                    
+
+                        El perro (Canis lupus familiaris), llamado perro doméstico o can, y coloquialmente chucho o tuso, y también choco; es un mamífero carnívoro de la familia de los cánidos, que constituye una subespecie del lobo (Canis lupus). En 2001, se estimaba que había cuatrocientos millones de perros en el mundo. Su tamaño o talla, su forma y pelaje es muy diverso según la raza. Posee un oído y olfato muy desarrollados, siendo este último su principal órgano sensorial. Su longevidad media es de unos trece a quince años, aunque las razas pequeñas pueden alcanzar hasta veinte años o más, mientras que las razas gigantes solo viven nueve o diez años.
+
+                    </p>
+                
+                 <p id="ParrafoLobo" class="Parrafo">
+                
+                    El lobo (Canis lupus) es una especie de mamífero placentario del orden de los carnívoros. El perro doméstico (Canis lupus familiaris) se considera miembro de la misma especie según distintos indicios, la secuencia del ADN y otros estudios genéticos. El primer registro fósil data de hace 800.000 años. Los lobos fueron antaño abundantes y se distribuían por Norteamérica, Eurasia y el Oriente Medio. Actualmente, por una serie de razones relacionadas con el hombre, incluyendo el muy extendido hábito de la caza, los lobos habitan únicamente en una muy limitada porción del que antes fue su territorio.
+                
+                
+                </p>
+                
+                  <p id="ParrafoLobo" style = "height: 200px;width: 700px;" >
+                
+                    
+                </p>
+                
+                
+                
+
+            </section>
+    
+    <section>
+     <h3 class="titulo">Referencias</h3>
+        <p>
+        <a href="https://www.w3schools.com/jsref/met_win_setinterval.asp">SetInterval</a>
+        <a href="https://www.w3schools.com/html/html5_draganddrop.asp">DragAndDrop</a>
+        <a href="https://www.w3schools.com/html/html_forms.asp">Formas</a>
+    
+        </p>
+    </section>
+       
+        
+        <footer class= "titulo">
+            Derechos reservados ITESM 2018
+        </footer>
+    </body>
+ <foot>
+    
+        <script type="text/javascript" src="Javalab5.js"></script> 
+    </foot>
+</html>

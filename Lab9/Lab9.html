@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<title>Laboratorio 5</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+
+     
+</head>
+
+<body>
+  
+      <div class="card-panel purple lighten-2">
+         <h1 class= "center-align"> Laboratorio 9 </h1>
+            <h3 class= "center-align"> Introducción a PHP </h3></div>
+    
+           <div class="container">
+      <section>
+          
+
+          <h3>Ejercicio 1:</h3><?php promedio(generarArreglo()) ?>
+          <h3>Ejercicio 2:</h3><?php mediana(generarArreglo()) ?>
+          <h3>Ejercicio 3:</h3><?php listaPromMediana(generarArreglo()) ?>
+          <h3>Ejercicio 4:</h3><?php tablaPotencias() ?>
+          <h3>Factorial:</h3><?php factorial(5) ?>
+          
+    
+    
+    
+     </section>
+        </div>
+
+  <section>
+             <div class="container">   
+            <a id = "Conceptos"> </a> 
+            <h3>Preguntas</h3>
+                
+        
+                <strong>
+                 ¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.  
+                </strong> 
+                <br/> 
+                <p>
+                    La función phpinfo() es una función que despliega informaación hacerca de PHP. Todas sus optiones de compilación, su configuración y extensiones actuales.
+                </p>
+                <ul>
+                    <li>Me pareció muy interesante que despliegue el la carpeta actual donde se está ejecutando y el nombre del archivo.</li>
+                    <li>Me pareció interesante que Berlín fuera la "Default Timezone"</li>
+                    <li>También me pareció interesante que esta identificado mi user profile y mi username.</li>
+                </ul> 
+                
+              
+                <br/>
+                    <strong>
+                   ¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?
+                </strong> 
+                <br/> 
+                <p>
+                    En un ambiente de producción es necesario limitar el acceso y el control de los usuarios y los administradores del sistema. 
+                </p>
+                    <br/> <br/> 
+                    
+                     <strong>
+                   ¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.
+                </strong> 
+                <br/> 
+                <p>
+                    Porque hay un vínculo entre ambos por medio en un index php, que les permite interactuar tanto por el lado del servidor, como por el lado del cliente. Php se necarga de ejecutar y procesar la información para que el usuario pueda disponer de ella. 
+                    </p>
+                    <br/> <br/> 
+                    
+      </div>
+          
+    </section>
+
+    
+    
+    
+</body>
+<footer class="page-footer purple lighten-2">
+          <div class="container ">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Andrea Daniela Tejeda Ocampo</h5>
+                <p class="grey-text text-lighten-4"> A01172848 </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">ITESM 2018</a>
+            </div>
+          </div>
+        </footer>
+</html>

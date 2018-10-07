@@ -1,0 +1,94 @@
+
+    
+    <h3 id= "Preguntas">Preguntas</h3>
+        <?php if (isset($error)): ?>
+                <div class="red-text">Error: <?= $error ?></div>
+            <?php endif; ?>
+        
+        <p> <strong>
+        ¿Por qué es una buena práctica separar el controlador de la vista?
+       </strong> </p>
+        
+        <p> Para tener más orden y definidas las diferentes funciones de cada elemento </p>
+        <br>
+    
+         <p><strong>
+        Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?
+       </strong> </p>
+       
+        <p> 
+        <lu>
+        <li> $GLOBALS: variables definidas en el global scop del script</li>
+        <li> $_SERVER: contiene los headers y direcciones. </li>
+        <li> $_FILES: Contiene los items descargados via el método de HTTP POST </li>
+        <li> $_COOKIE: Pasa el script actual via HTTP Cookies </li>
+        <li> $_SESSION: cientie las sesiones variables disponibles para un script </li>
+        <li> $_REQUEST: Tiene el contenido de $_GET, $_POST y $_COOKIE </li>
+        <li> $_ENV: Pasa un variable mediante el método environment </li>
+        </lu>
+
+        </p>
+        <br>
+         <p><strong>
+        Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.
+        </strong></p>
+        <lu>
+            <li>get_magic_quotes_gpc: Obtiene el valor actual de configuración de magic_quotes_gpc</li>
+            <li>mssql_free_statement: Liberar la memoria ocupada por la sentencia MS SQL</li>
+
+        </lu>
+         <br>
+        <p> </p>
+         <p><strong>
+        ¿Qué es XSS y cómo se puede prevenir?
+        
+        
+       </strong> </p>
+        <p>  Cross-site scripting es un tipo de vulnerabilidad de seguridad de aplicaciones web en la cual se permite inyectar código JavaScrpt u otro similar. Existen ciertas medidas para exitar XSS: 
+            <lu>
+            <li>No incluir datos foráneos</li>
+                <li>Codifique y valide todos los datos y atributos a incluir en el html, Javascript y URLs</li>
+            <li>Genere taglis que se engarfuen de codificar los datos de salida</li>
+                <li>Usar librerias para controlar la codificación de algunos campos </li>
+            </lu>
+</p>
+        
+    
+   <h3 id="Ejercicios">DAW FEST</h3>
+        
+        <div class="video-container">
+        <iframe width="853" height="480" src="http://www.youtube.com/embed/QlUUATGPHcg" frameborder="0" allowfullscreen></iframe>
+    </div>
+        
+    <p>¿Estás invitado al evento del año? Llena las formas y ¡descúbrelo! </p>
+  <div class="row">
+      
+    <form class="col s12" action="index.php" method= "POST">
+        
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="user" type="text" class="validate">
+          <label for="user">User </label>
+        </div>
+          </div>
+        
+        <div class="row">
+        <div class="input-field col s6">
+          <input id="matricula" type="text" class="validate">
+          <label for="matricula">matricula </label>
+        </div> 
+      </div>
+        
+        <div class="input-field col s12">
+          <input class="waves-effect waves-light btn" id="submit" type="stars" name="submit" value="Entrar" >
+            <label for="submit"> Let's party</label>
+          
+        </div>
+          
+          
+          
+        
+    </form>
+  
+    </div>
+   

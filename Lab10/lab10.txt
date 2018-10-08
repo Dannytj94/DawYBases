@@ -1,0 +1,27 @@
+
+Lab 10 
+Andrea Daniela Tejeda Ocampo
+
+¿Qué muestra la instrucción?
+
+Muetsra de manera gráfica la tabla de Materiales, sus columnas, tipo, entre otras especificaciones. 
+
+¿Qué efecto tuvo esta acción?
+
+Se abrió una ventana nueva
+
+¿Qué utilidad tiene esta manera de ejecutar comandos de SQL?
+Es sencilla y efectiva
+
+
+¿Qué relación tienen con las tablas de la base de datos? (checa su contenido)
+
+Son los datos de las tablas del ejercicio.
+
+¿Qué sucedio?
+
+Se mostraró la tabla seleccionada con todos los datos cargados.
+
+
+
+ftp://a1172848:yziqotun@10.25.18.106

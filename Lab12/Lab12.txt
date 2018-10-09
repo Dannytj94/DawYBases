@@ -1,0 +1,57 @@
+Reporte Lab 12 
+
+Revisa el contenido de la tabla materiales y determina si existe alguna inconsistencia en el contenido de la tabla. ¿Cuál es? ¿A qué se debe? 
+
+	Se agregó un nuevo registro y está reflejado en ella última fila de la tabla. Es el registro #45. Aunque no lo consideraría una inconsistencia como tal. 
+	
+¿Qué ocurrió? 
+Verifica si la tabla de materiales tiene definido algún constraint (restricción): 
+	No pude agregar un nuevo registro ya se violaba la PRIMARY KEY (clustered).
+	
+¿Qué información muestra esta consulta? 
+Asegúrate de crear constraints análogos para definir las llaves primarias de las tablas proveedores, y proyectos. 
+
+	constraint_type
+	constraint_name
+	delete_action
+	update_action
+	status enabled
+	status_for_replication
+	constraint_key
+
+¿Qué sentencias utilizaste para definir las llaves primarias? 
+Define el constraint correspondiente a la llave primaria para la tabla entregan, considerando que en este caso, la llave primaria está integrada por varias columnas. 
+
+	ALTER TABLE Nombre_Tabla add constraint Nombre_Constraint PRIMARY KEY (Clave) 
+
+¿Qué sentencias utilizaste para definir este constrait? 
+En caso de cometer algún error en la definición de los constraints, debes eliminar el constraint anterior y luego redefinirlo. 
+
+  ALTER TABLE tableName drop constraint ConstraintName
+  
+ ¿Qué particularidad observas en los valores para clave, rfc y numero? 
+¿Cómo responde el sistema a la inserción de este registro?
+
+	Se insertó un nuevo registro en la última fila de la tabla. Se aceptó un RFC de únicamente 3 caracteres y un número 0. 
+	
+¿Qué significa el mensaje que emite el sistema? 
+¿Qué significado tiene la sentencia anterior? 
+
+Significa que ocurrio un conflicto entre la sentencia que se acaba de efectur y la llave foránea. Con la validación de materiales se necesita un número diferente a 0. 
+
+¿Qué significan las columnas de esas consultas?
+	Los datos y descripciones de los constraints. 
+	
+¿Qué uso se le está dando a GETDATE()? 
+¿Tiene sentido el valor del campo de cantidad? 
+
+	Es una función que añade la fecha y la hora actual. El campo cantidad si tiene sentido en general, aunque no para este registro ya que es 0. 
+	
+¿Cómo responde el sistema? 
+¿Qué significa el mensaje? 
+	
+	Ya no deja efectuar el registro ya que hay un conflicto con cantidad y eso significa el mensaje. 
+
+
+	
+  

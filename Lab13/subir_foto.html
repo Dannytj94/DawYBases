@@ -1,0 +1,25 @@
+<h1>Sube la imagen de la mascota en adopción</h1>
+<p> ¡Pronto encontraremos un hogar para el o ella!</p>
+    
+<h2>Subir imagen</h2>
+
+    <?php if (isset($error)): ?>
+        <div class="red-text">Error: <?= $error ?></div>
+    <?php endif; ?>
+    
+  <div class="row">
+    <form action="controllerSubir.php" method="POST" enctype="multipart/form-data">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>Escoger imagen </span>
+        <input type="file" name="imagen">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+      <input type="submit" class="waves-effect waves-light btn" value="Subir">
+    </div>
+  </form>
+  </div>
+        
+    

@@ -1,0 +1,22 @@
+<h1>La pata de la patita </h1>
+<p>Conoce este mágico lugar donde podrás encontrar a tu nuevo mejor amigo</p>
+ <div class="video-container">
+        <iframe width="853" height="480" src="//www.youtube.com/embed/5NT06QBUpOQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+<h2>Animales en adopción </h2>
+
+<img src="descargas/gato.jpg" alt="Gato en adopcion">
+<img src="descargas/pajarito.jpg" alt="Pajarito en adopcion">
+<img src="descargas/perrito.jpg" alt="Perrito en adopcion">
+<img src="descargas/tortuga.jpg" alt="tortuga en adopcion">
+
+
+<?php if (isset($_SESSION["imagen"])): ?>
+        <img src="<?=$_SESSION["imagen"]"?> alt="Animal adopcion">
+    <?php endif ?>
+
+<h3>¿Quieres dar a alguien en adopción? </h3>
+<p>Sube una imagen para que alguien pregunte por el y encuentr un nuevo hogar </p>
+<a href="controllerSubir.php"> <i class="Small material-icons">file_upload</i> Subir Imagen </a>
+

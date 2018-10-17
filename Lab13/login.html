@@ -1,0 +1,31 @@
+<h1>La pata de la patita </h1>
+<h2>Refugio de animales</h2>
+<p> Loggeate para ver toda la opción de animalitos para adoptar o para poner uno en adopción </p>
+    
+    <?php if (isset($error)): ?>
+        <div class="red-text">Error: <?= $error ?></div>
+    <?php endif; ?>
+    
+  <div class="row">
+    <form class="col s12" action="index.php" method="POST">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="djfonz" id="usuario" name="usuario" type="text" class="validate">
+          <label for="usuario">Usuario</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="password" type="password" name="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+        <div class="input-field col s12">
+          <input class="waves-effect waves-light btn" id="submit" type="submit" name="submit" value="Entrar" >
+          
+        </div>
+      </div>
+      
+    </form>
+  </div>
+
+<h1 id="Preguntas"> Preguntas</h1>
+
+<p> Aquí va las preguntas de el ejercicio </p>

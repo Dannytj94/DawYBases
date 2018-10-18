@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=UTF-8>
+    <title>Lab14</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+</head>
+<body>
+    
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Lab14</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#Preguntas">Preguntas</a></li>
+          <li><a href="#registros">Registros</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+      <div class="container">
+          
+          <h1 id="Preguntas">Preguntas </h1>
+          <h4>¿Qué es ODBC y para qé es útil?</h4>
+          
+          <p>Open Database Connectivity es una interfaz de programación de estándar abierto para acceder a una base de datos. Es útil ya que por emdio de sentencias te permite hacer consultas de los diferentes archivos dentro de una BD</p>
+          
+          <h4>¿Qué es SQL Injection </h4>
+          <p> Es una vulnerabilidad que permite inyectar código mediante intrucciones de SQL de manera mal intencionada para manipular las bases de datos mientras pone en peligro la integridad de los archivos almacenados. </p>
+          
+          <h4>¿Qué técnicas puedes utilizar para evitar ataques de SQL Injection</h4>
+          
+          <p>Existen herramientas para hacer pruebas y detectar vulnerabilidades, como SQLMap, también se deben evitar las sentencias dinámicas, también existen diversas funciones que te permiten limpiar las entradas y evitar los ataques. </p>
+          
+          <h1 id="Registros">Registros</h1>
+          
+          <?php
+            require_once "util.php";
+            $result = getusuarios();
+            if(mysqli_num_rows($result)>0){
+        while($row = mysqli_fetch_assoc($result)){
+            echo "<tr>";
+echo "<td>" . $row["usuario"] . "</td>"
+echo "<td>" . $row["password"] . "</td>"
+
+}
+}
+
+            ?>
+          
+           <?php
+            require_once "util.php";
+            $result = getanimales();
+            if(mysqli_num_rows($result)>0){
+        while($row = mysqli_fetch_assoc($result)){
+            echo "<tr>";
+echo "<td>" . $row["nombre"] . "</td>"
+echo "<td>" . $row["especie"] . "</td>"
+echo "<td>" . $row["raza"] . "</td>"
+echo "<td>" . $row["edad"] . "</td>"
+
+}
+}
+
+            ?>
+          
+            <?php
+            require_once "util.php";
+            $result = getadoptantes();
+            if(mysqli_num_rows($result)>0){
+        while($row = mysqli_fetch_assoc($result)){
+            echo "<tr>";
+echo "<td>" . $row["usuario"] . "</td>"
+
+
+}
+}
+
+            ?>
+          
+            <?php
+            require_once "util.php";
+            $result = getanimalesporespecie();
+            if(mysqli_num_rows($result)>0){
+        while($row = mysqli_fetch_assoc($result)){
+            echo "<tr>";
+echo "<td>" . $row["nombre"] . "</td>"
+echo "<td>" . $row["especie"] . "</td>"
+echo "<td>" . $row["raza"] . "</td>"
+echo "<td>" . $row["edad"] . "</td>"
+
+}
+}
+
+            ?>
+        
+    
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+
+</body>
+    
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Andrea Daniela Tejeda Ocampo</h5>
+                <p class="grey-text text-lighten-4">A01172848</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">DAW y BD</a>
+            </div>
+          </div>
+        </footer>
+</html>
